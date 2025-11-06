@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1300, initial-scale=1.0">
+    <title>CarGurus</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- App Container -->
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <img src="img/logo.svg" alt="CarGurus" style="height: 19px;">
+            </div>
+            
+            <nav class="sidebar-nav">
+                <!-- Navigation content removed -->
+                <img src="img/sidenav.svg" alt="CarGurus" style="height: 656px;">
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="dropdowns">
+                <img src="img/Dropdowns.svg" alt="CarGurus" style="height: 36px;">
+            </div>
+            <div class="header" style="display: flex; justify-content: space-between; align-items: center;">
+                <h1>McGovern Honda</h1>
+            </div>
+            
+            <!-- Main content area -->
+            <div class="content">
+                <!-- Metric Cards -->
+                <div class="metric-cards-grid">
+                    <div class="metric-card">
+                        <a href="dealandtype.html" class="metric-card-title-link">
+                            <div class="metric-card-title">Market percentile</div>
+                        </a>
+                        <div class="metric-card-value-wrapper">
+                            <div class="metric-card-value">72th</div>
+                        </div>
+                        <div class="metric-card-change neutral">
+                            <span>vs Market</span>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <a href="dealandtype.html" class="metric-card-title-link">
+                            <div class="metric-card-title">Current inventory</div>
+                        </a>
+                        <div class="metric-card-value">247</div>
+                        <div class="metric-card-change negative">
+                            <img src="img/trend icon/down.svg" alt="Down" class="trend-icon">
+                            <span>-7% decrease</span>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <a href="dealandtype.html" class="metric-card-title-link">
+                            <div class="metric-card-title">% in Great, Good, or Fair deal</div>
+                        </a>
+                        <div class="metric-card-value">82%</div>
+                        <div class="metric-card-change negative">
+                            <img src="img/trend icon/down.svg" alt="Down" class="trend-icon">
+                            <span>-29% decrease</span>
+                        </div>
+                    </div>
+                    
+                    <div class="metric-card health-check-card">
+                        <a href="dealandtype.html" class="metric-card-title-link">
+                            <div class="metric-card-title">Health check</div>
+                        </a>
+                        <div class="metric-card-value">4/5</div>
+                        <div class="metric-card-change">
+                            <span>Missing target turn time</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Opportunities Section -->
+                <div class="opportunities-section">
+                    <h2 class="opportunities-heading">Opportunities</h2>
+                    
+                    <div class="opportunities-grid">
+                        <!-- Pricing Change Opportunity -->
+                        <a href="price.html" class="opportunity-card-link">
+                            <div class="opportunity-card">
+                                <div class="opportunity-content">
+                                <div class="opportunity-image-container">
+                                    <img src="img/opportunities/1.png" alt="Pricing Change" class="opportunity-image opportunity-image-1">
+                                </div>
+                                <div class="opportunity-details">
+                                    <span class="opportunity-label">PRICING CHANGE</span>
+                                    <h3 class="opportunity-title">3 vehicles dropped to a lower deal rating</h3>
+                                    <p class="opportunity-description">Set the strategy for the inventory you want to promote and get additional high-impact SRP placements.</p>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+
+                        <!-- Leads Action Opportunity -->
+                        <div class="opportunity-card">
+                            <div class="opportunity-content">
+                                <div class="opportunity-image-container">
+                                    <img src="img/opportunities/2.png" alt="Leads Action" class="opportunity-image opportunity-image-2">
+                                </div>
+                                <div class="opportunity-details">
+                                    <span class="opportunity-label">LEADS ACTION</span>
+                                    <h3 class="opportunity-title">12 leads without response in 48 hours</h3>
+                                    <p class="opportunity-description">Quick follow-up increases conversion by 35%. Review and respond to these high-intent customers before they move on.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stocking Opportunity -->
+                        <div class="opportunity-card">
+                            <div class="opportunity-content">
+                                <div class="opportunity-image-container">
+                                    <img src="img/opportunities/5.png" alt="Stocking" class="opportunity-image opportunity-image-3">
+                                </div>
+                                <div class="opportunity-details">
+                                    <span class="opportunity-label">STOCKING</span>
+                                    <h3 class="opportunity-title">Low inventory for high-demand SUVs</h3>
+                                    <p class="opportunity-description">SUV searches increased 23% this month. Consider stocking more mid-size SUVs to capture this growing demand.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sourcing Opportunity -->
+                        <div class="opportunity-card">
+                            <div class="opportunity-content">
+                                <div class="opportunity-image-container">
+                                    <img src="img/opportunities/4.png" alt="Sourcing" class="opportunity-image opportunity-image-4">
+                                </div>
+                                <div class="opportunity-details">
+                                    <span class="opportunity-label">MARKETING</span>
+                                    <h3 class="opportunity-title">5 vehicles needing more exposure</h3>
+                                    <p class="opportunity-description">Consider giving your vehicles more exposure through our marketing channels.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Performance Section -->
+                <div class="performance-section">
+                    <h2 class="performance-heading">Performance</h2>
+                    
+                    <div class="performance-container">
+                        <!-- Tabs -->
+                        <div class="performance-tabs">
+                            <button class="performance-tab active" data-tab="leads">Total leads</button>
+                            <button class="performance-tab" data-tab="connections">Connections</button>
+                            <button class="performance-tab" data-tab="vdp-views">VDP views</button>
+                            <button class="performance-tab" data-tab="inventory">Inventory</button>
+                        </div>
+                        
+                        <!-- Tab Content -->
+                        <div class="performance-tab-content">
+                            <!-- Leads Tab -->
+                            <div id="leads-tab" class="tab-pane active">
+                                <div class="performance-content">
+                                    <!-- Chart Container -->
+                                    <div class="performance-chart-container">
+                                        <canvas id="leadsChart"></canvas>
+                                    </div>
+                                    
+                                    <!-- Insights Section -->
+                                    <div class="performance-insights">
+                                        <img src="img/icon/ai_color.svg" alt="AI Insights" class="insight-icon">
+                                        <h3 class="insight-title">Lead volume trending down</h3>
+                                        <p class="insight-description">
+                                            Your lead volume has decreased by 14% in December. Consider adjusting your pricing strategy or increasing your marketing efforts to boost lead generation.
+                                        </p>
+                                        <button class="insight-dismiss">Tell me more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Connections Tab -->
+                            <div id="connections-tab" class="tab-pane">
+                                <div class="performance-content">
+                                    <!-- Chart Container -->
+                                    <div class="performance-chart-container">
+                                        <canvas id="connectionsChart"></canvas>
+                                    </div>
+                                    
+                                    <!-- Insights Section -->
+                                    <div class="performance-insights">
+                                        <img src="img/icon/ai_color.svg" alt="AI Insights" class="insight-icon">
+                                        <h3 class="insight-title">Improve connection rates</h3>
+                                        <p class="insight-description">
+                                            Analyze your connection patterns and optimize your response times to increase customer engagement.
+                                        </p>
+                                        <button class="insight-dismiss">Dismiss</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- VDP Views Tab -->
+                            <div id="vdp-views-tab" class="tab-pane">
+                                <div class="performance-content">
+                                    <!-- Chart Container -->
+                                    <div class="performance-chart-container">
+                                        <canvas id="vdpViewsChart"></canvas>
+                                    </div>
+                                    
+                                    <!-- Insights Section -->
+                                    <div class="performance-insights">
+                                        <img src="img/icon/ai_color.svg" alt="AI Insights" class="insight-icon">
+                                        <h3 class="insight-title">VDP views increasing</h3>
+                                        <p class="insight-description">
+                                            Your vehicle detail page views have increased by 22% this month. This indicates strong buyer interest in your inventory.
+                                        </p>
+                                        <button class="insight-dismiss">Tell me more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Inventory Tab -->
+                            <div id="inventory-tab" class="tab-pane">
+                                <div class="performance-content">
+                                    <!-- Chart Container -->
+                                    <div class="performance-chart-container">
+                                        <canvas id="inventoryChart"></canvas>
+                                    </div>
+                                    
+                                    <!-- Insights Section -->
+                                    <div class="performance-insights">
+                                        <img src="img/icon/ai_color.svg" alt="AI Insights" class="insight-icon">
+                                        <h3 class="insight-title">Balanced inventory mix</h3>
+                                        <p class="insight-description">
+                                            Your inventory maintains a healthy 70/30 split between used and new vehicles. This mix aligns well with current market demand.
+                                        </p>
+                                        <button class="insight-dismiss">Tell me more</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Section -->
+                <div class="news-section">
+                    <h2 class="news-heading">Industry insights</h2>
+                    
+                    <div class="news-grid">
+                        <!-- News Item 1 -->
+                        <div class="news-item">
+                            <div class="news-image-container">
+                                <img src="img/news/1.png" alt="EV supply news" class="news-image">
+                            </div>
+                            <div class="news-content">
+                                <div class="news-date">Nov 4, 2025</div>
+                                <h3 class="news-title">CarGurus Intelligence Report - October 2025</h3>
+                            </div>
+                        </div>
+
+                        <!-- News Item 2 -->
+                        <div class="news-item">
+                            <div class="news-image-container">
+                                <img src="img/news/2.png" alt="Q4 vehicle trends" class="news-image">
+                            </div>
+                            <div class="news-content">
+                                <div class="news-date">Nov 2, 2025</div>
+                                <h3 class="news-title">CarGurus Intelligence Report - Q3 2025</h3>
+                            </div>
+                        </div>
+
+                        <!-- News Item 3 -->
+                        <div class="news-item">
+                            <div class="news-image-container">
+                                <img src="img/news/3.png" alt="Fixed ops profits" class="news-image">
+                            </div>
+                            <div class="news-content">
+                                <div class="news-date">Nov 1, 2025</div>
+                                <h3 class="news-title">Why fixed ops profits aren't keeping pace with demand—and how to earn more in 2026</h3>
+                            </div>
+                        </div>
+
+                        <!-- News Item 4 -->
+                        <div class="news-item">
+                            <div class="news-image-container">
+                                <img src="img/news/4.png" alt="OEM EV offerings" class="news-image">
+                            </div>
+                            <div class="news-content">
+                                <div class="news-date">Oct 28, 2025</div>
+                                <h3 class="news-title">How OEMs are adjusting their EV offerings—and what dealers are doing to keep up</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Side Panel -->
+    <div class="side-panel" id="healthCheckPanel">
+        <div class="side-panel-header">
+            <h2 class="side-panel-title">Health Check Details</h2>
+            <button class="side-panel-close" id="closeSidePanel">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="side-panel-content">
+            <div class="health-check-summary">
+                <div class="health-score">
+                    <div class="score-value">4/5</div>
+                    <div class="score-label">Overall Health Score</div>
+                </div>
+                <div class="health-status">
+                    <div class="status-item passed">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <circle cx="8" cy="8" r="8" fill="#10B981"/>
+                            <path d="M5 8L7 10L11 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Highlight</span>
+                    </div>
+                    <div class="status-item passed">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <circle cx="8" cy="8" r="8" fill="#10B981"/>
+                            <path d="M5 8L7 10L11 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>SMC</span>
+                    </div>
+                    <div class="status-item passed">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <circle cx="8" cy="8" r="8" fill="#10B981"/>
+                            <path d="M5 8L7 10L11 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Digital Retail</span>
+                    </div>
+                    <div class="status-item passed">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <circle cx="8" cy="8" r="8" fill="#10B981"/>
+                            <path d="M5 8L7 10L11 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Scheduled report</span>
+                    </div>
+                    <div class="status-item failed">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <circle cx="8" cy="8" r="8" fill="#DC2626"/>
+                            <path d="M10 6L6 10M6 6L10 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Turn time setting</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="turn-time-config">
+                <h3 class="turn-time-config-title">What's your target turn time?</h3>
+                <p class="turn-time-config-description">Tell us how quickly you aim to move inventory, this helps us suggest pricing that supports your goals.</p>
+                
+                <div class="turn-time-dropdown">
+                    <label class="turn-time-label">Hard goal (how long before a unit must be gone)</label>
+                    <select class="turn-time-select">
+                        <option value="15">15 days</option>
+                        <option value="30" selected>30 days</option>
+                        <option value="45">45 days</option>
+                        <option value="60">60 days</option>
+                        <option value="75">75 days</option>
+                        <option value="90">90 days</option>
+                    </select>
+                </div>
+                
+                <div class="turn-time-input-group">
+                    <label class="turn-time-label">Soft goal (ideal target, if different)</label>
+                    <div class="turn-time-input-wrapper">
+                        <input type="number" class="turn-time-input" placeholder="Enter number" min="1" max="365">
+                        <span class="turn-time-input-suffix">days</span>
+                    </div>
+                </div>
+                
+                <button class="turn-time-save-btn">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+/* Pricing Page Specific Styles */
+
+/* Content Wrapper */
+.content-wrapper {
+    display: flex;
+    height: calc(100vh - 67px); /* Subtract dropdowns height */
+}
+
+/* Left Side Content */
+.left-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px;
+}
+
+.header h1 {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+}
+
+/* Table Container */
+.table-container {
+    background-color: white;
+    margin: 0 24px 24px 24px;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+/* Search and Filters */
+.search-filters {
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-box {
+    position: relative;
+    width: 300px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #0D1722;
+}
+
+.filter-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    background-color: #f3f4f6;
+    border-radius: 16px;
+    font-size: 12px;
+    color: #0D1722;
+    cursor: pointer;
+}
+
+.filter-tag .remove {
+    font-size: 16px;
+    line-height: 1;
+    color: #6b7280;
+}
+
+/* Table Styles */
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.inventory-table th {
+    background-color: #f9fafb;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0D1722;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.inventory-table th:last-child {
+    text-align: right;
+}
+
+.inventory-table td {
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #0D1722;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+/* Reduce padding for car image and vehicle info columns */
+.inventory-table td:nth-child(1) {
+    padding-right: 6px;
+}
+
+.inventory-table td:nth-child(2) {
+    padding-left: 6px;
+}
+
+.inventory-table tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Car Image */
+.car-image {
+    width: 48px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Vehicle Info */
+.vehicle-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.vehicle-name {
+    font-weight: 500;
+    color: #0D1722;
+}
+
+.vehicle-details {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.vehicle-details a {
+    color: #0D1722;
+    text-decoration: underline;
+}
+
+.vehicle-details a:hover {
+    text-decoration: none;
+}
+
+/* Price Column */
+.price-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.price {
+    font-weight: 600;
+    color: #0D1722;
+}
+
+.draft-price {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* Rating Badge */
+.rating-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 0px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.rating-badge .icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* Ops Value */
+.ops-value {
+    display: inline-block;
+    padding: 2px 8px;
+    background-color: #e0f2fe;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #0369a1;
+}
+
+/* Right-aligned columns */
+.inventory-table td:nth-child(5),
+.inventory-table td:nth-child(6),
+.inventory-table td:nth-child(7) {
+    text-align: right;
+}
+
+/* Make table row clickable */
+.inventory-table tbody tr {
+    cursor: pointer;
+}
+
+/* Filter Sidebar */
+.filter {
+    width: 306px;
+    height: 100%;
+    background-color: white;
+    border-left: 1px solid #D8DBDE;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.filter img {
+    width: 266px;
+    display: block;
+}
+
+/* Side Panel */
+.side-panel {
+    width: 569px;
+    height: 100%;
+    background-color: white;
+    border-left: 1px solid #D8DBDE;
+    display: none;
+    overflow-y: auto;
+}
+
+.side-panel img {
+    width: 580px;
+    height: 1388px;
+    display: block;
+}
+
+/* Hide filter when panel is active */
+.filter.hidden {
+    display: none;
+}
+
+.side-panel.active {
+    display: block;
+}

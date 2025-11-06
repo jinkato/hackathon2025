@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1300, initial-scale=1.0">
+    <title>Pricing - CarGurus</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="price-styles.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- App Container -->
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <img src="img/logo.svg" alt="CarGurus" style="height: 19px;">
+            </div>
+            
+            <nav class="sidebar-nav">
+                <!-- Navigation content removed -->
+                <img src="img/sidenav.svg" alt="CarGurus" style="height: 656px;">
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="dropdowns">
+                <img src="img/Dropdowns.svg" alt="CarGurus" style="height: 36px;">
+            </div>
+            
+            <!-- Content Wrapper -->
+            <div class="content-wrapper">
+                <!-- Left Side Content -->
+                <div class="left-content">
+                    <div class="header">
+                        <h1>PriceVantage</h1>
+                    </div>
+                    <!-- Table Container -->
+                    <div class="table-container">
+                        <!-- Search and Filters -->
+                        <div class="search-filters">
+                            <div class="search-box">
+                                <input type="text" placeholder="Search">
+                            </div>
+                            <div class="filter-tag">
+                                Good Deal <span class="remove">×</span>
+                            </div>
+                            <div class="filter-tag">
+                                Reduce price <span class="remove">×</span>
+                            </div>
+                            <div class="filter-tag">
+                                $50 NBD <span class="remove">×</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Inventory Table -->
+                        <table class="inventory-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Name and stock ID</th>
+                                    <th>Price</th>
+                                    <th>Rating</th>
+                                    <th>Ops</th>
+                                    <th>Mileage</th>
+                                    <th>MDS</th>
+                                    <th>On lot ↓</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/car/car1.png" alt="Car" class="car-image">
+                                    </td>
+                                    <td>
+                                        <div class="vehicle-info">
+                                            <div class="vehicle-name">New 2025 INFINITI QX80</div>
+                                            <div class="vehicle-details">
+                                                <a href="#">FE1AB2A54JLB33914</a>
+                                                <img src="img/copy.svg" alt="Copy" style="width: 12px; height: 12px;">
+                                                <a href="#">2718</a>
+                                                <img src="img/copy.svg" alt="Copy" style="width: 12px; height: 12px;">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price-info">
+                                            <div class="price">$22,400</div>
+                                            <div class="draft-price">Draft: $20,900</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="rating-badge good-deal">
+                                            <img src="img/deals/good.svg" alt="Good Deal" class="icon"> Good Deal
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="ops-value">-$360</span>
+                                    </td>
+                                    <td>46,815 mi</td>
+                                    <td>17</td>
+                                    <td>14 days</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/car/car2.png" alt="Car" class="car-image">
+                                    </td>
+                                    <td>
+                                        <div class="vehicle-info">
+                                            <div class="vehicle-name">2015 Toyota Camry LE</div>
+                                            <div class="vehicle-details">
+                                                <a href="#">FE1AB2A54JLB33914</a>
+                                                <img src="img/copy.svg" alt="Copy" style="width: 12px; height: 12px;">
+                                                <a href="#">2718</a>
+                                                <img src="img/copy.svg" alt="Copy" style="width: 12px; height: 12px;">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price-info">
+                                            <div class="price">$19,400</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="rating-badge good-deal">
+                                            <img src="img/deals/good.svg" alt="Good Deal" class="icon"> Good Deal
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="ops-value">-$170</span>
+                                    </td>
+                                    <td>26,009 mi</td>
+                                    <td>5</td>
+                                    <td>26 days</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/car/car3.png" alt="Car" class="car-image">
+                                    </td>
+                                    <td>
+                                        <div class="vehicle-info">
+                                            <div class="vehicle-name">2006 Ford Mustang</div>
+                                            <div class="vehicle-details">
+                                                <a href="#">FE1AB2A54JLB33914</a>
+                                                <img src="img/copy.svg" alt="Copy" style="width: 12px; height: 12px;">
+                                                <a href="#">2718</a>
+                                                <img src="img/copy.svg" alt="Copy" style="width: 12px; height: 12px;">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price-info">
+                                            <div class="price">$21,188</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="rating-badge fair-deal">
+                                            <img src="img/deals/fair.svg" alt="Fair Deal" class="icon"> Fair Deal
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="ops-value">-$290</span>
+                                    </td>
+                                    <td>34,127 mi</td>
+                                    <td>11</td>
+                                    <td>15 days</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Filter Sidebar -->
+                <div class="filter">
+                    <img src="img/filter.svg" alt="Filter">
+                </div>
+                
+                <!-- Side Panel -->
+                <div class="side-panel">
+                    <img src="img/sidepanel/sidepanel1.png" alt="Side Panel">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="price.js"></script>
+</body>
+</html>
