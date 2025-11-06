@@ -28,7 +28,7 @@ exports.handler = async (event, context) => {
     const { messages, model = 'gpt-4', temperature = 0.7, max_tokens = 500 } = JSON.parse(event.body);
 
     // Get API key from environment variable
-    const apiKey = process.env.OPENAI_API_KEY;
+    const apiKey = process.env.OPENAIAPI;
     
     if (!apiKey) {
       return {

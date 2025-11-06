@@ -23,7 +23,7 @@ This is a dealer dashboard application built for CarGurus Hackathon 2025. It fea
    - Navigate to Site settings > Environment variables
    - Add the following variable:
      ```
-     OPENAI_API_KEY=your_actual_openai_api_key_here
+     OPENAIAPI=your_actual_openai_api_key_here
      ```
 
 3. **Redeploy**
@@ -35,7 +35,7 @@ This is a dealer dashboard application built for CarGurus Hackathon 2025. It fea
 1. Clone the repository
 2. Create a `.env` file in the root directory:
    ```
-   OPENAI_API_KEY=your_actual_openai_api_key_here
+   OPENAIAPI=your_actual_openai_api_key_here
    ```
 3. Install Netlify CLI: `npm install -g netlify-cli`
 4. Run locally: `netlify dev`
