@@ -1,11 +1,11 @@
 // Chat functionality for insights panel
 const InsightChat = {
-    // OpenAI configuration
+    // Configuration
     config: {
-        apiKey: 'YOUR_OPENAI_API_KEY', // Replace with actual API key
         model: 'gpt-4',
         temperature: 0.7,
         maxTokens: 500,
+        netlifyFunction: '/.netlify/functions/chat',
         systemPrompt: `You are a CarGurus AI assistant helping dealers understand their performance metrics and insights. 
         You have access to the dealer's current performance data:
         - Lead volume has decreased by 14% in December
@@ -87,16 +87,15 @@ const InsightChat = {
         }
     },
 
-    // Send message to OpenAI
+    // Send message to OpenAI via Netlify Function
     async sendToOpenAI(userMessage) {
         // Add to message history
         this.messageHistory.push({ role: 'user', content: userMessage });
 
-        const response = await fetch('https://api.openai.com/v1/chat/completions', {
+        const response = await fetch(this.config.netlifyFunction, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${this.config.apiKey}`
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify({
                 model: this.config.model,
