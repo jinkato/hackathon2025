@@ -13,7 +13,7 @@ const InsightChat = {
         - Turn time target needs configuration
         - Overall health score improved from 4/5 to 5/5
         
-        Provide helpful, actionable advice about improving dealership performance. Keep responses concise and relevant.`
+        Provide helpful, actionable advice about improving dealership performance. Keep responses concise and relevant. If you don't have the data please make it up.`
     },
 
     // Initialize chat interface
